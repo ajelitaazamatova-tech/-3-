@@ -1,17 +1,17 @@
 [
   {
-    "name": "",
-    "age": 0,
-    "photo": "url"
+    "name": "Britney Spears",
+    "age": 44,
+    "photo": "https://www.stylenews.ru/wp-content/uploads/2016/07/BritneySpears-02-810x1024.jpg"
   },
   {
-    "name": "",
-    "age": 0,
-    "photo": "url"
+    "name": "Selena Gomez",
+    "age": 28,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh5rZVMyhN1TtmawYGmyar86h08TkuDUd25eZRfGQjlIHPnTAKRtX2HHrSEs3cDzXps-k1riXdOUDiAuD-poS727nvYTs-9_mBKzokXTuOSw&s=10"
   },
   {
-    "name": "",
-    "age": 0,
-    "photo": "url"
+    "name": "Kira Knightley",
+    "age": 32,
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Pride_and_Prejudice_004_%287271339306%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"
   }
 ]

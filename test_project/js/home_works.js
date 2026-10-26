@@ -47,3 +47,40 @@ reset.onclick = () => {
     sec = 0;
     seconds.innerHTML = sec;
 }
+//hw4
+const charactersList = document.querySelector(".characters-list"); 
+
+const request = new XMLHttpRequest();
+request.open("GET", "../data/characters.json");
+request.setRequestHeader("Content-type", "application/json");
+request.send();
+
+request.addEventListener("load", () => {
+        const data = JSON.parse(request.response);
+
+        data.forEach(character => {
+            const card = document.createElement("div");
+            card.classList.add("character-card");
+            
+            card.innerHTML = `
+                <div class="character-photo">
+                    <img src="${character.photo}" alt="${character.name}">
+                </div>
+                <h3>${character.name}</h3>
+                <p class="character-age">Age: ${character.age}</p>
+            `;
+            
+            charactersList.appendChild(card);
+        });
+});
+
+//hw2 part2
+const charactersRequest = new XMLHttpRequest();
+charactersRequest.open("GET", "../data/characters.json"); 
+charactersRequest.setRequestHeader("Content-type", "application/json");
+charactersRequest.send();
+
+charactersRequest.addEventListener("load", () => {
+        const responseData = JSON.parse(charactersRequest.response);
+        console.log("Данные из characters.json:", responseData);
+});
